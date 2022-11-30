@@ -1,4 +1,110 @@
+/*  Collors вторичний #212121 */
+/*  Collors основний #757575 */
+/*  Акцент #2196F3; */
+
+:root{
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3;
+--color-logotip: #000000;
+--background: #FFFFFF;
+--footer-color: #2F303A;
+--background-color: #F5F4FA;
+--color-address:rgba(255, 255, 255, 0.6);
+
+} 
+
 body
 {
-    color: aqua;
+   background-color: #FFFFFF;
+}
+.list{
+    list-style: none;
+}       
+/*  text-decoration: none; */
+.logo, .link, .works,
+.logo-foot, .contact
+{
+    text-decoration: none;
+}
+
+    /*  Header  */
+.logo{
+    color:var(--color-logotip);
+    text-decoration: none;
+   
+}
+.logo-span{
+    color: var(--accent-color);
+}
+
+    /* Site Nav */
+.site-nav,
+.site-nav .link{
+    color: var(--title-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+.cont-nav .link{
+    color: var(--primary-text-color);
+}
+.cont-nav .link:hover,
+.cont-nav .link:focus{
+    color: var(--accent-color);
+}
+
+
+    /* Hero */
+.hero{
+    background-color:var(--footer-color) ;
+}
+.hero-title{
+    color:var(--background) ;
+}
+
+.title{
+    color: var(--title-text-color);
+}
+.hero-button{
+    background-color:var(--accent-color) ;
+    color:var(--background) ;
+}
+
+
+
+    /* Button */
+.button{
+    background-color: var(--background-color);
+    color: var(--title-text-color);
+}  
+.button:hover,
+.button:focus{
+    background-color: var(--accent-color);
+    color: var(--background);
+}  
+
+    /* Text P */
+.text{
+    color: var(--primary-text-color);
+}
+
+
+
+    /* Footer */
+.logo-foot{
+    color: var(--background);
+}
+
+footer{
+    background-color: var(--footer-color);
+}
+
+.address{
+    color: var(--background);
+}
+
+.contact{
+    color: var(--color-address);
 }
