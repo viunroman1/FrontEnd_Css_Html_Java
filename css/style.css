@@ -1,6 +1,7 @@
 /*  Collors вторичний #212121 */
 /*  Collors основний #757575 */
 /*  Акцент #2196F3; */
+/* Button-active */
 
 :root{
 --primary-text-color: #757575;
@@ -11,12 +12,20 @@
 --footer-color: #2F303A;
 --background-color: #F5F4FA;
 --color-address:rgba(255, 255, 255, 0.6);
-
+--button-active:#188CE8;
 } 
 
+
+
+/* font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em; */
 body
 {
    background-color: #FFFFFF;
+   color: var(--primary-text-color);
+   font-family: Roboto, sans-serif;
 }
 .list{
     list-style: none;
@@ -28,12 +37,12 @@ body
     text-decoration: none;
 }
 
-    /*  Header  */
+                                        /*  Header  */
 .logo{
     color:var(--color-logotip);
-    text-decoration: none;
-   
+    text-decoration: none;   
 }
+
 .logo-span{
     color: var(--accent-color);
 }
@@ -49,27 +58,59 @@ body
 }
 .cont-nav .link{
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .cont-nav .link:hover,
 .cont-nav .link:focus{
     color: var(--accent-color);
 }
+.link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
+                                        /* Main */
 
     /* Hero */
 .hero{
     background-color:var(--footer-color) ;
+   
 }
 .hero-title{
-    color:var(--background) ;
+    color:var(--background);   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36px;   
+    letter-spacing: 0.06em;
+    padding-top: 200px;
+    text-align: center;
+    text-transform: uppercase;   
+    margin-top: 0px;     
 }
 
 .title{
-    color: var(--title-text-color);
+    color: var(--title-text-color);    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .hero-button{
     background-color:var(--accent-color) ;
-    color:var(--background) ;
+    color:var(--background) ; 
+    font-family: inherit;
+}
+.hero-button:focus,
+.hero-button:hover{
+    background-color: var(--button-active) ;
+    color: var(--background);
+    font-family: inherit;
 }
 
 
@@ -78,16 +119,53 @@ body
 .button{
     background-color: var(--background-color);
     color: var(--title-text-color);
+    font-family: inherit;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }  
 .button:hover,
 .button:focus{
     background-color: var(--accent-color);
     color: var(--background);
+    border: 1px solid transparent;
 }  
 
     /* Text P */
 .text{
     color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7px;   
+    letter-spacing: 0.03em;
+}
+
+.home-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.name{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;         
+    letter-spacing: 0.03em;
+}
+
+.text-name{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;        
+    letter-spacing: 0.03em;
 }
 
 
@@ -107,4 +185,22 @@ footer{
 
 .contact{
     color: var(--color-address);
+}
+
+                    /* project */
+.project-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2px;
+    letter-spacing: 0.06em;
+}
+
+.project-text{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9px;
+    letter-spacing: 0.03em;
+
 }
