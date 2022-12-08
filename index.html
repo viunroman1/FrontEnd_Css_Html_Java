@@ -14,25 +14,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-
 <body>
-     <header class="heder-cotanier">
-        <div class="container">
-            <nav>
+     <header class="container"> 
+        <div class="heder-cotanier">
+        <nav class="container-nav">
             <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li class="item"><a href="./index.html" class="link">Студіо</a></li>
-                <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                <li class="item"><a href="#" class="link">Контакти</a></li>
-            </ul>
-            </nav>      
-        
-            <ul class="cont-nav list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
+                <ul class="site-nav list">
+        <li class="item"><a href="./index.html" class="link">Студіо</a></li>
+        <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li class="item"><a href="#" class="link">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <ul class="cont-nav list">
+    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+</ul>
+        </div>       
+                  
     </header>
 <main>   
     <!-- Hero -->    
@@ -41,9 +40,9 @@
        <button class="hero-button" type="button" > Замовити послугу </button> 
     </section>    
 
-    <section class="hero-benefits">
-        <h2>Переваги</h2>
-    <ul class="list">
+    <section class="container ">
+        <h2 class="visually-hidden">Переваги</h2>
+    <ul class="benefits list">
         <li> 
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -62,40 +61,40 @@
         </li>
     </ul>
     </section>
-    <section>
+    <section class="container-home" >
         <h2 class="home-title">Чим ми займаємося</h2>
-        <ul class="list">
-            <li><img src="./images/box1.jpg" alt="Людина працює за комп'ютером" width="370" height="294"></li>
-            <li> <img src="./images/box2.jpg" alt=" Людина робить  макет телефону" width="370" height="294"> </li>
-            <li><img src="./images/box3.jpg" alt=" Вибираю палітру на планшеті" width="370" height="294"></li>          
+        <ul class="working list">
+            <li class="item"><img src="./images/box1.jpg" alt="Людина працює за комп'ютером" width="370" height="294"></li>
+            <li class="item"> <img src="./images/box2.jpg" alt=" Людина робить  макет телефону" width="370" height="294"> </li>
+            <li class="item"><img src="./images/box3.jpg" alt=" Вибираю палітру на планшеті" width="370" height="294"></li>          
         </ul>    
     </section>
 
-    <section>
-        <h2 class="home-title">Наша команда</h2>
-        <ul class="team list">
-            <li>
+    <section class="container-team" >
+        <h2 class="home-title">Наша команда</h2>       
+            <ul class="team list">
+            <li class="item">
                 <img src="./images/img7.jpg" alt="Ігор Дем'яненко" width="270" height="260">
                 <h3 class="name">Ігор Дем'яненко</h3>
                 <p class="text-name" lang="en">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
                 <img src="./images/img8.jpg" alt="Ольга Рєпіна" width="270" height="260">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="text-name" lang="en">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
                 <img src="./images/img9.jpg" alt="Микола Тарасов" width="270" height="260">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="text-name" lang="en">Marketing</p>
             </li>
-            <li>
+            <li class="item">
                 <img src="./images/img10.jpg" alt="Михайло Єрмаков" width="270" height="260">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="text-name" lang="en">UI Designer</p>
             </li>
-        </ul>    
-    </section>
+            </ul>    
+        </section>   
 </main>
 <footer>
     <a class="logo-foot" href="./index.html"><span class="logo-span">Web</span>Studio</a>

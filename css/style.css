@@ -30,9 +30,7 @@ body
 {
    background-color: #FFFFFF;
    color: var(--primary-text-color);
-   font-family: Roboto, sans-serif;
-   
-   /* margin-top: 0px; */
+   font-family: Roboto, sans-serif;   
 }
 
 /* h1,
@@ -59,26 +57,27 @@ p {
 }
 
                                         /*  Header  */
-.header-container{
-background-color: var(--background); 
-margin-top: 0px;
-}
 
-.container{
+.heder-cotanier{
+    display: flex;
     
-height: 80px;
+}
+.container{ 
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 0px;
-margin-bottom: 30px;
 }
 
+.container-nav{
+    display: flex;
+}
 
 
 .logo{
     color:var(--color-logotip);
-    text-decoration: none;   
+    text-decoration: none;
+    margin-right: 93px;   
 }
 
 .logo-span{
@@ -109,14 +108,20 @@ margin-bottom: 30px;
     color: var(--accent-color);
 }
 
+.cont-nav{
+    display: flex;   
+    margin-left: auto;
+}
+.cont-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
 
 .cont-nav .link{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;      
     
 }
 
@@ -162,7 +167,10 @@ margin-bottom: 30px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+
 }
 .hero-button{
     background-color:var(--accent-color) ;
@@ -185,12 +193,24 @@ margin-bottom: 30px;
     
 }
 
-.hero-benefits{    
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
+.benefits{
+    display: flex;
+    
+    
+}
 
 
     /* Button */
@@ -222,20 +242,55 @@ margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.7;   
     letter-spacing: 0.03em;
+
+    margin-top: 0px;
+    margin-bottom: 0;
 }
+
+.container-home{       
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 94px;
+        
+}
+
+.working{
+    display: flex;
+}
+.working .item:not(:last-child)
+{
+    margin-right: 32px;
+}
+
 
 .home-title{
     color: var(--title-text-color);
+    width: 1200px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    width: 1200px;
+    text-transform: uppercase; 
+}
+.team{   
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
+    width: 1200px;   
+    display: flex;
 }
-.team{
+.team .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.container-team{
     background-color: var(--badground-team);
 }
 
@@ -243,7 +298,7 @@ margin-bottom: 30px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    /* line-height: 19;     Обрати внимание когда будет инет         */
+    line-height: 1.2;
     letter-spacing: 0.03em;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -255,7 +310,7 @@ margin-bottom: 30px;
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 19;    Сюда тоже     */
+    line-height: 1.2; 
     letter-spacing: 0.03em;
     margin-top: 0px;
     margin-bottom: 0px;
