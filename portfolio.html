@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -33,81 +33,105 @@
     </ul>
     </div>       
     </header>
-
     <main>
                 <!-- Навігація по сайту -->
-        <ul class="list">
-            <li><button class="button" type="button" >Усі</button></li>
-            <li><button class="button" type="button">Веб-сайти</button></li>
-            <li><button class="button" type="button">Додатки</button></li>
-            <li><button class="button" type="button">Дизайн</button></li>
-            <li><button class="button" type="button">Маркетинг</button></li>
-        </ul>
 
-
+        <section class="filtres container">
+            <ul class="list filtres-project">
+                <li class="item"><button class="button filtres-button" type="button" >Усі</button></li>
+                <li class="item"><button class="button filtres-button" type="button">Веб-сайти</button></li>
+                <li class="item"><button class="button filtres-button" type="button">Додатки</button></li>
+                <li class="item"><button class="button filtres-button" type="button">Дизайн</button></li>
+                <li class="item"><button class="button filtres-button" type="button">Маркетинг</button></li>
+            </ul>
+        </section>
+        
              <!--project-->
-
-        <section>           
-            <ul class="list">
-                <li>
+        <section class="container project">           
+            <ul class="list project-portfolio">
+                <li class="item">
                     <a class="works" href="#">
                     <img src="./images/Portfolio/foto-laptop.jpg" alt="">
-                    <h2 class="project-title">Технохряк</h2>
-                    <p class="project-text">Веб-сайт</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Технохряк</h2>
+                        <p class="project-text">Веб-сайт</p></a>
+                    </div>                    
                 </li>
 
-                <li>
+                <li class="item">
                     <a class="works" href="#">
                      <img src="./images/Portfolio/basketball.jpg" alt="">
-                     <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                     <p class="project-text">Дизайн</p></a>
+                     <div class="name-project">
+                        <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="project-text">Дизайн</p></a>
+                    </div>                     
                 </li>
 
-                <li>
+                <li class="item">
                     <a class="works" href="#">
                     <img src="./images/Portfolio/seabood-restoran.jpg" alt="">
-                    <h2 class="project-title">Ресторан Seafood</h2>
-                    <p class="project-text">Додаток</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Ресторан Seafood</h2>
+                        <p class="project-text">Додаток</p></a>
+                    </div>
+                    
                 </li>
 
-                <li><a class="works" href="#">
+                <li class="item"><a class="works" href="#">
                     <img src="./images/Portfolio/headphone.jpg" alt="">
-                    <h2 class="project-title">Проєкт Prime</h2>
-                    <p class="project-text">Маркетинг</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Проєкт Prime</h2>
+                        <p class="project-text">Маркетинг</p></a>
+                    </div>                    
                 </li>
 
-                <li> 
+                <li class="item"> 
                     <a class="works" href="#">
                     <img src="./images/Portfolio/box.jpg" alt="">
-                    <h2 class="project-title">Проєкт Boxes</h2>
-                    <p class="project-text">Додаток</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Проєкт Boxes</h2>
+                        <p class="project-text">Додаток</p></a>
+                    </div>
+                    
                 </li>
                 
-                <li><a class="works" href="#">
+                <li class="item"><a class="works" href="#">
                     <img src="./images/Portfolio/monitor-aple.jpg" alt="">
-                    <h2 class="project-title">Inspiration has no Borders</h2>
-                    <p class="project-text">Веб-сайт</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Inspiration has no Borders</h2>
+                        <p class="project-text">Веб-сайт</p></a>
+                    </div>
+                    
                 </li>
 
-                <li>
+                <li class="item">
                     <a class="works" href="#">
                     <img src="./images/Portfolio/joornal.jpg" alt="">
-                    <h2 class="project-title">Видання Limited Edition</h2>
-                    <p class="project-text">Дизайн</p></a>
+                    <div class="name-project">
+                         <h2 class="project-title">Видання Limited Edition</h2>
+                         <p class="project-text">Дизайн</p></a>
+                    </div>
+                   
                 </li>
 
-                <li>
+                <li class="item">
                     <a class="works" href="#">
                     <img src="./images/Portfolio/label-tag.jpg" alt="">
-                    <h2 class="project-title">Проєкт LAB</h2>
-                    <p class="project-text">Маркетинг</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Проєкт LAB</h2>
+                        <p class="project-text">Маркетинг</p></a>
+                    </div>
+                    
                 </li>
 
-                <li>
+                <li class="item">
                     <a class="works" href="">
                     <img src="./images/Portfolio/laptop-work.jpg" alt="Зростаючий бізнес">
-                    <h2 class="project-title">Growing Business</h2>
-                    <p class="project-text">Додаток</p></a>
+                    <div class="name-project">
+                        <h2 class="project-title">Growing Business</h2>
+                        <p class="project-text">Додаток</p></a>
+                    </div>
+                    
                 </li>                                           
             </ul>            
         </section>

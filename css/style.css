@@ -15,6 +15,7 @@
 --color-address:rgba(255, 255, 255, 0.6);
 --button-active:#188CE8;
 --badground-team: #F5F4FA;
+--border: #EEEEEE;
 } 
 
 img {
@@ -39,16 +40,6 @@ body
    font-family: Roboto, sans-serif;   
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-} */
-
 .list{
     list-style: none;
     padding: 0px;
@@ -62,23 +53,24 @@ p {
     text-decoration: none;
 }
 
-                                        /*  Header  */
+                 /*  Header  */
 
 .heder-cotanier{
     display: flex;
     padding: 32px;    
 }
+.item-nav{
+    padding: 32px;
+}
 .container{ 
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 0px;
 }
 
 .container-nav{
     display: flex;
 }
-
 
 .logo{
     color:var(--color-logotip);
@@ -100,8 +92,6 @@ margin-top: 0px;
     color: var(--title-text-color);
     display: flex;   
 }
-
-
 
 .site-nav .item:not(:last-child){
     margin-right: 50px;
@@ -141,16 +131,15 @@ margin-top: 0px;
     letter-spacing: 0.02em;
 }
 
-                                        /* Main */
-
-    /* Hero */
+                        /* Hero */
 
 .hero{
     background-color:var(--footer-color) ;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px; 
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title{
@@ -159,14 +148,18 @@ margin-top: 0px;
     font-size: 44px;
     line-height: 1.36;   
     letter-spacing: 0.06em;
-    padding-top: 195px;
-    padding-bottom: 30px ; 
+    
+    
     text-transform: uppercase;   
     margin-top: 0px; 
     margin-bottom: 0px;
-    /* outline: 2px solid tomato;        */
 }
 
+            /* Переваги */
+.perevagu{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .title{
     color: var(--title-text-color);    
     font-weight: 700;
@@ -179,18 +172,18 @@ margin-top: 0px;
     margin-bottom: 0px;
 
 }
+
 .hero-button {
     background-color:var(--accent-color) ;
-    color:var(--background) ; 
+    color:var(--background); 
     font-family: inherit;
-    margin-top: 0px;
-    margin-bottom: 205px;
-    padding-top: 0;
-    padding-bottom: 0px;
+    margin-top: 40px;    
+   
     min-width: 216px;   
     height: 50px;
     padding: 10px 32px;
     text-align: center;
+    border: 1px solid transparent;
 }
 
 .hero-button:focus,
@@ -216,8 +209,6 @@ margin-top: 0px;
 
 .benefits{
     display: flex;   
-    padding-top: 89px;   
-    padding-bottom: 0px;
     gap: 30px;  
 }
 
@@ -234,6 +225,9 @@ margin-top: 0px;
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }  
 
 .button:hover,
@@ -345,9 +339,6 @@ margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 10px;
 }
-/* .iem-team{
-    widtth: 270px;
-} */
 
 .name-team{
    
@@ -357,8 +348,6 @@ margin-top: 0px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--background);
 }
-
-
 
     /* Footer */
 .logo-foot{
@@ -371,9 +360,6 @@ margin-top: 0px;
 .container.foot{
    padding-top: 60px;   
 }
-
-
-
 
 footer{
     background-color: var(--footer-color);
@@ -390,7 +376,6 @@ footer{
     margin: 0px;
     padding-top: 20px;
 }
-
 .contact{
     color: var(--color-address);       
 }
@@ -407,7 +392,6 @@ p{
     margin-bottom: 0px;
 }
 
-
                     /* project */
 .project-title{
     color: var(--title-text-color);
@@ -415,9 +399,8 @@ p{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    outline: 2px solid rgb(255, 208, 0);
+    margin-top: 20px;
+    margin-bottom: 0px;    
 }
 
 .project-text{
@@ -426,8 +409,50 @@ p{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    outline: 2px solid tomato;
+    margin-top: 4px;
+    margin-bottom: 0px;   
+}
 
+        /* < !-- Навігація по сайту --> */
+.filtres{
+    padding-top: 94px;
+    padding-bottom: 34px;   
+   }
+
+.filtres-project{
+    display: flex;    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    flex: wrap;
+    justify-content: center
+}
+
+.filtres-project .item:not(:last-child){
+ margin-right: 8px;
+}
+
+.filtres-button{
+    text-align: center;
+}
+
+.project{
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
+.project-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-portfolio .item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.name-project{
+    background:var(--background);   
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
 }
