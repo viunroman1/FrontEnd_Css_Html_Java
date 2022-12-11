@@ -57,7 +57,8 @@ body
 
 .heder-cotanier{
     display: flex;
-    padding: 32px;    
+    padding: 32px; 
+    border-bottom: 1px solid #ECECEC;;   
 }
 .item-nav{
     padding: 32px;
@@ -66,6 +67,8 @@ body
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
+padding-left: 15px;
+padding-right: 15px; 
 }
 
 .container-nav{
@@ -132,14 +135,25 @@ margin-right: auto;
 }
 
                         /* Hero */
-
+/*  */
 .hero{
-    background-color:var(--footer-color) ;
+    background-color:var(--footer-color) ;         
+    background-repeat: no-repeat; /*не повторює зображення*/ 
+    background-position: center; /* центрірує зображення, є ще top right.... */
+    /* background-size: 100% 100% або cover - зберігає пропорції ; розтягує картинку  */
+    background-size: cover;
+    /* background-attachment: fixed; єфект паралакc картинка остаеться на месте при скролинге */
+    /* background-attachment: scroll; картинка скролиться з контентом він йде за замовчуванням  */
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url('../images/iImg-overlay.jpg'); /*  загрузка зображення фоном */
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px; 
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 200px;    
 }
 
 .hero-title{
@@ -153,6 +167,9 @@ margin-right: auto;
     text-transform: uppercase;   
     margin-top: 0px; 
     margin-bottom: 0px;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
             /* Переваги */
@@ -444,11 +461,9 @@ p{
 .project-portfolio{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
-.project-portfolio .item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
+
 .name-project{
     background:var(--background);   
     padding: 24px 20px;
