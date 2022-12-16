@@ -18,6 +18,8 @@
 --border: #EEEEEE;
 --color-icon: #F6F5FB;
 --color-seti:#AFB1B8;
+--color-backdrop: rgba(0, 0, 0, 0.2);
+--color-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 } 
 
 img {
@@ -70,7 +72,8 @@ width: 1200px;
 margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
-padding-right: 15px; 
+padding-right: 15px;
+text-decoration: none;
 }
 
 .container-nav{
@@ -117,7 +120,7 @@ padding-right: 15px;
 
 .site-nav .link:hover, 
 .site-nav .link:focus{
-    color: var(--accent-color);
+    color: var(--accent-color);    
 }
 
 .cont-nav{
@@ -148,6 +151,38 @@ padding-right: 15px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+.link.current{
+    color: var(--accent-color);    
+}
+
+.link.current::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+
+    width: 48px;
+    height: 4px;      
+
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+/* .current::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;   
+
+    background-color: var(--accent-color);
+    border-radius: 2px;
+} */
+
 
                         /* Hero */
 /*  */
@@ -338,13 +373,43 @@ padding-right: 15px;
     gap: 30px;
     
     padding-top: 50px;
-    padding-bottom: 0px;
-
+    padding-bottom: 0px;           
 }
-/* .working .item:not(:last-child)
-{
-    margin-right: 32px;
-} */
+
+.label{
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding: 27px;        
+    margin-top: 224px;        
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+        
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;        
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    color: var(--background);
+}
+.label{
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding: 27px;        
+    margin-top: 224px;        
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+        
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;        
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    color: var(--background);
+}
+
+
             /* Наша команда */
 
 .home-title{
@@ -439,13 +504,21 @@ footer{
 
 .address{
     color: var(--background);
+    margin-top: 20px;
 }
-.main-address{
-    padding-top: 0px;
+.main-address{  
+    display: flex; 
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
     margin-top: 0px;
     margin-bottom: 0px;
     margin: 0px;
-    padding-top: 20px;
+    padding: 0;  
+}
+
+.kontakt>a{
+    padding: 0;
+    
 }
 .contact{
     color: var(--color-address);       
@@ -463,21 +536,33 @@ p{
     margin-bottom: 0px;
 }
 .link-footer{
-    display: flex;
+    display: flex;   
     flex-direction: column;
     margin-left: 70px;
+    
 }
 .link-footer p {
     text-transform: uppercase;
     text-align: center;
     color: var(--background);
     margin-bottom: 20px;
+    margin-right: 70px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.03em;
 }
+.container.foot{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding-left: 215px; */
 
+}
+
+.foot{
+    display: flex;
+       
+ } 
 .seti .link-seti {
     margin: 0px;
 }
@@ -486,6 +571,9 @@ p{
     display: flex;   
     justify-content: center;
     gap: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
 }
 
 
@@ -497,7 +585,7 @@ p{
     height: 44px;
     border-radius: 50%;
     fill: var(--background);
-    background: rgba(184, 177, 177, 0.1);mb50px
+    background: rgba(184, 177, 177, 0.1);
 }
 
 .link-seti:hover,
@@ -579,6 +667,7 @@ p{
 }
 
 .name-project{
+    
     background:var(--background);   
     padding: 24px 20px;
     border-bottom: 1px solid var(--border);       
@@ -590,6 +679,63 @@ p{
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.works{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.features-card{
+    position: absolute;   
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+    transform: translateY(0);
+    color: var(--background);
+    background-color:var(--accent-color);
+    opacity: 0;    
+    /* pointer-events: none;               */
+}
+
+.features-card:focus,
+.features-card:hover{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+      
+        
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;      
+    letter-spacing: 0.03em;
+
+    
+    top: 100%;
+    transform: translateY(-100%);
+    background:rgba(33, 150, 243, 0.9);
+    color:var(--background);
+    padding: 24px;
+    opacity: 1;
+    pointer-events: none;   
+}
+/* 
+color: var(--primary-text-color);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+
+margin-top: 0px;
+margin-bottom: 0;
+
+padding-top: 10px;
+padding-bottom: 0px; */
+
+
 
 
 .client{
@@ -609,13 +755,14 @@ p{
     padding-bottom: 94px;
     fill:var(--color-seti);
     
+    
 }
 .client-icons{
     display: flex;
     gap: 30px;
     width: 170px;
     height: 92px;
-    padding: 32px;
+    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     margin-left: 30px;
@@ -626,3 +773,58 @@ p{
     border-radius: 4px;
     fill: var(--accent-color);
 }
+
+
+
+
+            /* Modal  */
+.backdrop{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;    
+    background: var(--color-backdrop)
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    max-width: 528px;
+    max-height: 581px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: var(--background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.modal-close{
+    position: absolute;
+    display: flex;   
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px;
+}
+
+.modal-text{
+    font-weight: 700;
+    line-height: 23px;
+    font-size: 20px;
+    letter-spacing: 1.15;
+    text-align: center;
+    color: var(--title-text-color);margin-top: 40px;
+}
+

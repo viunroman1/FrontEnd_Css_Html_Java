@@ -16,23 +16,33 @@
 </head>
 
 <body>
-  <header class="container"> 
-        <div class="heder-cotanier">
+<header class="container">
+    <div class="heder-cotanier">
         <nav class="container-nav">
             <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-                <ul class="site-nav list">
-        <li class="item"><a href="./index.html" class="link">Студіо</a></li>
-        <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-        <li class="item"><a href="#" class="link">Контакти</a></li>
-        </ul>
-    </nav>
+            <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link">Студіо</a></li>
+                <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+                <li class="item"><a href="#" class="link">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="cont-nav list">
+            <li class="item">
+                <svg class="icon-header" width="16px" height="12px">
+                    <use href="./images/icons.svg#envelope-hover"></use>
+                </svg>
+                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            </li>
 
-    <ul class="cont-nav list">
-        <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-    </ul>
-    </div>       
-    </header>
+            <li class="item">
+                <svg class="icon-header" width="10px" height="16px">
+                    <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+</header>
     <main>
                 <!-- Навігація по сайту -->
 
@@ -50,12 +60,18 @@
         <section class="container project">           
             <ul class="list project-portfolio">
                 <li class="item">
-                    <a class="works" href="#">
-                    <img src="./images/Portfolio/foto-laptop.jpg" alt="">
-                    <div class="name-project">
+                    <div class="works"> 
+                    <a  href="#">
+                    <img src="./images/Portfolio/foto-laptop.jpg" 
+                    alt="">
+                    <p class="features-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                    вичерпні відомості про компанію чи приватну особу.</p>
+                </div>            
+                   
+                <div class="name-project">
                         <h2 class="project-title">Технохряк</h2>
-                        <p class="project-text">Веб-сайт</p>                    
-                    </div> 
+                        <p class="project-text">Веб-сайт</p>                
+                 </div> 
                 </a>                   
                 </li>
 

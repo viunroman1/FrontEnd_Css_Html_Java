@@ -11,7 +11,7 @@
             rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            crossorigin="anonymous" referrerpolicy="no-referrer" />            
             <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body>
@@ -20,22 +20,28 @@
             <nav class="container-nav">
                 <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link">Студіо</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                    <li class="item"><a href="#" class="link">Контакти</a></li>
+                    <li class="item">
+                        <a href="./index.html" class="link current">Студіо</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="link">Портфоліо</a></li>
+                    <li class="item">
+                        <a href="#" class="link">Контакти</a></li>
                 </ul>
             </nav>        
                 <ul class="cont-nav list">
                     <li class="item">
                         <svg class="icon-header" width="16px" height="12px">
                             <use href="./images/icons.svg#envelope-hover"></use></svg>
-                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                        <a href="mailto:info@devstudio.com"  class="link">info@devstudio.com</a>
+                    <!-- <div class="registr"></div> -->
+                    </li>
 
                 <li class="item">
                     <svg class="icon-header" width="10px" height="16px">
                         <use href="./images/icons.svg#smartphone"></use>
                     </svg>
-                    <a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <a href="tel:+380961111111" class="link" data-mo>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -44,7 +50,7 @@
     <section class="hero">
        <h1 class="visually-hidden">Проекти</h1>
        <h1 class="hero-title"> Ефективні рішення для вашого бізнесу</h1>
-       <button class="hero-button" type="button" > Замовити послугу </button> 
+       <button class="hero-button" type="button" data-modal-open> Замовити послугу </button> 
     </section>    
 
     <section class="container perevagu">
@@ -83,9 +89,16 @@
     <section class="container-home" >
         <h2 class="home-title">Чим ми займаємося</h2>
         <ul class="working list">
-            <li class="item"><img src="./images/box1.jpg" alt="Людина працює за комп'ютером" width="370" height="294"></li>
-            <li class="item"> <img src="./images/box2.jpg" alt=" Людина робить  макет телефону" width="370" height="294"> </li>
-            <li class="item"><img src="./images/box3.jpg" alt=" Вибираю палітру на планшеті" width="370" height="294"></li>          
+            <li class="item"> 
+                <p class="label">Десктопні додатки</p>
+                <img src="./images/box1.jpg" alt="Людина працює за комп'ютером" width="370" height="294">              
+            </li>
+            <li class="item"> 
+                <p class="label">Мобільні додатки</p>
+                <img src="./images/box2.jpg" alt=" Людина робить  макет телефону" width="370" height="294"> </li>
+            <li class="item">
+                <p class="label">Дизайнерські рішення</p>
+                <img src="./images/box3.jpg" alt=" Вибираю палітру на планшеті" width="370" height="294"></li>          
         </ul>    
     </section>
 
@@ -219,43 +232,46 @@
                 </svg>
             </li>
             <li>
-                <svg class="client-icons" width="40px" height="52px">
+                <svg class="client-icons" width="106px" height="60px">
                     <use href="./images/icons.svg#group-a"></use>
                 </svg>
             </li>
             <li>
-                <svg class="client-icons" width="43px" height="41px">
+                <svg class="client-icons" width="106px" height="60px">
                     <use href="./images/icons.svg#group-b"></use>
                 </svg>
             </li>
             <li>
-               <svg class="client-icons" width="40px" height="52px">
+               <svg class="client-icons" width="106px" height="60px">
                     <use href="./images/icons.svg#group-c"></use>
                 </svg>
             </li>
             <li>
-                <svg class="client-icons" width="40px" height="52px">
+                <svg class="client-icons" width="106px" height="60px">
                     <use href="./images/icons.svg#group-d"></use>
                 </svg>
             </li>
             <li>
-                <svg class="client-icons" width="40px" height="52px">
+                <svg class="client-icons" width="106px" height="60px">
                     <use href="./images/icons.svg#group-f"></use>
                 </svg>
             </li>
         </ul>
     </section>
 </main>
-<footer>
+<footer >
     <div class="container foot">
-        <a class="logo-foot" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-    <address class="main-address">
-        <p class="address">м. Київ, пр-т Лесі Українки, 26 </p>
-        <ul class="list">
-            <li class="mail"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="mail"> <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-
+        <div>
+            <a class="logo-foot" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+            <p class="address">м. Київ, пр-т Лесі Українки, 26 </p>
+            <address class="main-address">
+                
+                <ul class="kontakt list">
+                    <li class="mail"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="mail"> <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+        </div>
+        
         <div class="link-footer">
             <p>приєднуйтесь</p>            
             <ul class="seti list">
@@ -294,5 +310,18 @@
     
     
 </footer>
+
+            <!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="icon-modal" width="18px" height="18px">
+                <use href="./images/icons.svg#close-modsal"></use>
+            </svg>
+        </button>
+        <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
