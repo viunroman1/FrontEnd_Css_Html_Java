@@ -62,25 +62,37 @@ body {
         
         /*  Header  */
 
-        .heder-cotanier.container {
+.heder-cotanier.container {
             margin-left: auto;
             margin-right: auto;
             padding-left: 15px;
             padding-right: 15px;
             width: 1200px;
-        }
+}
 
-        .heder-cotanier {
-            display: flex;
-            padding: 32px;
+.heder-cotanier {
+            align-items: center;
+            justify-content: space-between;          
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-right: 15px;
             border-bottom: 1px solid #ECECEC;
-        }
+}
 
-        .item-nav {
+.main-list{
+            display: flex;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            align-items: normal;
+            justify-items: flex-end;
+}
+
+.item-nav {
             padding: 32px;
-        }
+}
 
-        .container {
+.container {
             width: 1200px;
             margin-left: auto;
             margin-right: auto;
@@ -88,29 +100,38 @@ body {
             padding-left: 15px;
             padding-right: 15px;
 
-        }
+}
 
-        .container-nav {
+.container-nav {
             display: flex;
-        }
+            align-items: center;
+            color: var(--accent-color);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+}
 
-        .logo {
+.logo {
             color: var(--color-logotip);
-            text-decoration: none;
-            margin-right: 93px;
+            text-decoration: none;               
             font-weight: 700;
             font-size: 26px;
-            line-height: 1.2px;
-        }
+            font-family: Raleway, sans-serif;
+            line-height: 1.19;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-right: 93px;
+}
 
-        .logo-span {
+.logo-span {
             color: var(--accent-color);
 
-        }
+}
 
         /* Icon heder */
 
-        .icon-header {
+.icon-header {
             fill: var(--primary-text-color);
             margin-right: 10px;
             display: inline-flex;
@@ -119,62 +140,85 @@ body {
             height: 12px;
             padding: 0px;
             background-position: cover;
-        }
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
+            /* margin-right: 10px;
+            fill: currentcolor; */
+            
+}
 
         /* Site Nav */
-        .site-nav,
-        .site-nav .link {
-            color: var(--title-text-color);
-            display: flex;
-        }
 
-        .site-nav .item:not(:last-child) {
-            margin-right: 50px;
-        }
+.site-nav{
+    display: flex;
+    align-items: center;
+    transition: transform 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
+}
 
-        .site-nav .link:hover,
-        .site-nav .link:focus {
-            color: var(--accent-color);
-        }
+.site-nav .list {
+    display: block;
+}
 
-        .cont-nav {
+.item+.item {
+    margin-left: 50px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.icon-header:focus,
+.icon-header:hover {
+    color: var(--accent-color);
+}
+
+.site-nav .link {
+    display: block;
+    color: var(--title-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.cont-nav {
             display: flex;
             margin-left: auto;
-        }
+            align-items: center;
+}
 
-        .cont-nav .item:not(:last-child) {
+.cont-nav .item:not(:last-child) {
             margin-right: 50px;
-        }
+}
 
-        .cont-nav .link {
+.cont-nav .link {
             color: var(--primary-text-color);
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.02em;
 
-        }
+}
 
-        .cont-nav .link:hover,
-        .cont-nav .link:focus {
+.cont-nav .link:hover,
+.cont-nav .link:focus {
             color: var(--accent-color);
-        }
+}
 
-        .link {
+.link {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.02em;
 
-        }
+}
 
-        .link.current {
+.link.current {
             position: relative;
             color: var(--accent-color);
-        }
+}
 
-        .link.current::after {
+.link.current::after {
             display: inline-block;
             content: "";
             position: absolute;
@@ -187,9 +231,9 @@ body {
 
             background-color: var(--accent-color);
             border-radius: 2px;
-        }
+}
 
-        .current::after {
+.current::after {
             display: inline-block;
             content: "";
             position: absolute;
@@ -200,4 +244,4 @@ body {
 
             background-color: var(--accent-color);
             border-radius: 2px;
-        }
+}     
