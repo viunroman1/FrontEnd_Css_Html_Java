@@ -589,10 +589,11 @@ p{
     margin-bottom: 0px;
 }
 .link-footer{
-    margin-top: 12px;
-    margin-right: 93px;
-    
+    display: flex;
+    /* margin-top: 12px;
+    margin-right: 93px;  */
 }
+
 .link-footer p {
     text-transform: uppercase;
     text-align: center;
@@ -680,15 +681,16 @@ p{
 
 
 .mail-input input { 
-    margin: 0;
-        margin-right: 12px;
-        padding: 15px 295px 15px 16px;
-        width: 358px;
-        height: 50px;
-        border: 1px solid var(--color-border-input);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        background: var(--footer-color);
+    /* margin: 0; */
+    /* padding: 15px 295px 15px 16px; */
+    margin-right: 0;
+    margin-right: 12px;    
+    width: 358px;
+    height: 50px;
+    border: 1px solid var(--color-border-input);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: var(--footer-color);
     /* margin: 0;
     margin-right: 12px;
     padding: 15px 295px 15px 16px;
@@ -960,9 +962,12 @@ p{
 }
 
 
+.textarea{
+    resize: none;
+}
 
 .name-textarea {
-    margin-bottom: 4px;
+    margin-bottom: 4px;   
 }
 
 
